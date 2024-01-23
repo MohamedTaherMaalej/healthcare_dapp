@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
+// Custom scroll behavior that supports both touch and mouse devices
 class MyCustomScrollBehavior extends MaterialScrollBehavior {
   @override
-  Set<PointerDeviceKind> get dragDevices => {
-        PointerDeviceKind.touch,
-        PointerDeviceKind.mouse,
-      };
+  Set<PointerDeviceKind> get dragDevices =>
+      {PointerDeviceKind.touch, PointerDeviceKind.mouse};
 }
 
-TextStyle SafeGoogleFont(
+// Function to safely get a Google Font with fallback to Source Sans Pro on error
+TextStyle safeGoogleFont(
   String fontFamily, {
   TextStyle? textStyle,
   Color? color,
@@ -33,6 +33,7 @@ TextStyle SafeGoogleFont(
   double? decorationThickness,
 }) {
   try {
+    // Try to get the specified font
     return GoogleFonts.getFont(
       fontFamily,
       textStyle: textStyle,
@@ -56,8 +57,8 @@ TextStyle SafeGoogleFont(
       decorationThickness: decorationThickness,
     );
   } catch (ex) {
-    return GoogleFonts.getFont(
-      "Source Sans Pro",
+    // Fallback to Source Sans Pro in case of an error
+    return GoogleFonts.sourceSansPro(
       textStyle: textStyle,
       color: color,
       backgroundColor: backgroundColor,

@@ -17,8 +17,7 @@ class _Splash2State extends State<Splash2> {
     // Timer to navigate to the splash screen page after 3 seconds
     Timer(
       const Duration(seconds: 3),
-      () => Navigator.pushReplacementNamed(
-          context, MyRoutes.splashScreenPage),
+      () => Navigator.pushReplacementNamed(context, MyRoutes.splashScreenPage),
     );
   }
 

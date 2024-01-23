@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:healthcare_dapp/Services/Contracts.dart';
+import 'package:healthcare_dapp/Services/contracts.dart';
 import 'package:healthcare_dapp/Utils/routes.dart';
 import 'package:provider/provider.dart';
 import 'package:web3dart/web3dart.dart';

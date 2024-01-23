@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'Pages/splash_screen_0.dart';
 import 'Utils/routes.dart';
 import 'package:provider/provider.dart';
-import 'Services/Contracts.dart';
+import 'Services/contracts.dart';
 
 void main() {
   // Configure system UI overlay style, setting status bar color and icon brightness
@@ -19,20 +19,21 @@ void main() {
   runApp(
     ChangeNotifierProvider(
       create: (context) => Contracts(),
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
   // Constructor for MyApp
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     // Build and return the MaterialApp widget, which is the root of the application
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Disable the debug banner in the corner
+      debugShowCheckedModeBanner:
+          false, // Disable the debug banner in the corner
 
       // Define the theme for the entire app using Google Fonts
       theme: ThemeData(

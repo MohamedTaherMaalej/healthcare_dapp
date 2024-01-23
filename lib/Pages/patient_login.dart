@@ -48,7 +48,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                       margin: EdgeInsets.fromLTRB(0, 0, 0, 28),
                       child: Text(
                         'Sign In For MYDOC',
-                        style: SafeGoogleFont(
+                        style: safeGoogleFont(
                           'Cuprum',
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
@@ -69,7 +69,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                       child: Center(
                         child: Text(
                           'PATIENT PANEL',
-                          style: SafeGoogleFont(
+                          style: safeGoogleFont(
                             'Cuprum',
                             fontSize: 20,
                             fontWeight: FontWeight.w700,
@@ -172,7 +172,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                             ),
                             child: Text(
                               'Sign In',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -192,7 +192,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                       child: RichText(
                         textAlign: TextAlign.center,
                         text: TextSpan(
-                          style: SafeGoogleFont(
+                          style: safeGoogleFont(
                             'Cuprum',
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
@@ -202,7 +202,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                           children: [
                             TextSpan(
                               text: 'By signing in, you agree to our',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -212,7 +212,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                             ),
                             TextSpan(
                               text: ' ',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -222,7 +222,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                             ),
                             TextSpan(
                               text: 'Term of service',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w700,
@@ -232,7 +232,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                             ),
                             TextSpan(
                               text: ' ',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -242,7 +242,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                             ),
                             TextSpan(
                               text: 'and acknowledge that you have read our',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -252,7 +252,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                             ),
                             TextSpan(
                               text: ' ',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -262,7 +262,7 @@ class _PatientLoginPageState extends State<PatientLoginPage> {
                             ),
                             TextSpan(
                               text: 'Privacy Policy.',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w700,

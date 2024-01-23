@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
-import 'package:healthcare_dapp/Services/Contracts.dart';
+import 'package:healthcare_dapp/Services/contracts.dart';
 import 'package:healthcare_dapp/Utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:healthcare_dapp/utils.dart';
@@ -61,7 +61,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                           margin: EdgeInsets.fromLTRB(0, 0, 0, 16),
                           child: Text(
                             'Sign Up For MYDOC',
-                            style: SafeGoogleFont(
+                            style: safeGoogleFont(
                               'Cuprum',
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
@@ -81,7 +81,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                           child: Center(
                             child: Text(
                               'DOCTOR PANEL',
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -175,7 +175,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                                 ),
                                 child: Text(
                                   'Sign Up',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 20,
                                     fontWeight: FontWeight.w700,
@@ -194,7 +194,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                           child: RichText(
                             textAlign: TextAlign.center,
                             text: TextSpan(
-                              style: SafeGoogleFont(
+                              style: safeGoogleFont(
                                 'Cuprum',
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -204,7 +204,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                               children: [
                                 TextSpan(
                                   text: 'By signing up, you agree to our',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
@@ -214,7 +214,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                                 ),
                                 TextSpan(
                                   text: ' ',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
@@ -224,7 +224,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                                 ),
                                 TextSpan(
                                   text: 'Term of service',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w700,
@@ -234,7 +234,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                                 ),
                                 TextSpan(
                                   text: ' ',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
@@ -244,7 +244,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                                 ),
                                 TextSpan(
                                   text: 'and acknowledge that you have read our',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
@@ -254,7 +254,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                                 ),
                                 TextSpan(
                                   text: ' ',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
@@ -264,7 +264,7 @@ class _DoctorSignupPageState extends State<DoctorSignupPage> {
                                 ),
                                 TextSpan(
                                   text: 'Privacy Policy.',
-                                  style: SafeGoogleFont(
+                                  style: safeGoogleFont(
                                     'Cuprum',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w700,

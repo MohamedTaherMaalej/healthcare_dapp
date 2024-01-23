@@ -45,7 +45,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                     child: Text(
                       'Consult Specialist Doctors \nSecurely And Privately',
                       textAlign: TextAlign.center,
-                      style: SafeGoogleFont(
+                      style: safeGoogleFont(
                         'Poppins',
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
@@ -63,7 +63,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                     child: Text(
                       "Get ready to embark on a journey towards a healthier, happier you. Let's start this empowering experience together!",
                       textAlign: TextAlign.center,
-                      style: SafeGoogleFont(
+                      style: safeGoogleFont(
                         'Roboto',
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
@@ -95,7 +95,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                           ),
                           child: Text(
                             'Get Started',
-                            style: SafeGoogleFont(
+                            style: safeGoogleFont(
                               'Cuprum',
                               fontSize: 20,
                               fontWeight: FontWeight.w700,

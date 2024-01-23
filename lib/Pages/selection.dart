@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:healthcare_dapp/Services/Contracts.dart';
+import 'package:healthcare_dapp/Services/contracts.dart';
 import 'package:healthcare_dapp/Utils/routes.dart';
 import 'package:healthcare_dapp/utils.dart';
 import 'package:provider/provider.dart';
@@ -69,7 +69,7 @@ class _SelectionPageState extends State<SelectionPage> {
                           ),
                           child: Text(
                             'DOCTOR',
-                            style: SafeGoogleFont(
+                            style: safeGoogleFont(
                               'Cuprum',
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
@@ -111,7 +111,7 @@ class _SelectionPageState extends State<SelectionPage> {
                           ),
                           child: Text(
                             'PATIENT',
-                            style: SafeGoogleFont(
+                            style: safeGoogleFont(
                               'Cuprum',
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
