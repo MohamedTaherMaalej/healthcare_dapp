@@ -8,7 +8,6 @@ Healthcare_DApp is a mobile healthcare decentralized application (DApp) built on
 2. [Features](#features)
 3. [Getting Started](#getting-started)
 
-
 ## Technologies Used
 
 Healthcare_DApp leverages the following technologies to provide a robust and secure healthcare experience:
