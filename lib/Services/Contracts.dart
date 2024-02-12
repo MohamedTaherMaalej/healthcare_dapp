@@ -14,7 +14,7 @@ class Contracts extends ChangeNotifier {
       Platform.isAndroid ? 'http://10.0.2.2:7545' : 'http://127.0.0.1:7545';
   final String _wsURL =
       Platform.isAndroid ? 'http://10.0.2.2:7545' : 'ws://127.0.0.1:7545';
-  final String _privateKey = "";
+  final String _privateKey = "cc9534958f2c906bfa0d0f0eb187f8b01a7cbc1362aa37c598059fca5c9422e0";
 
   late Web3Client _client;
   late EthPrivateKey _creds;
@@ -95,19 +95,19 @@ class Contracts extends ChangeNotifier {
     //doctor contracts
     _contractDoctor = DeployedContract(_abiCodeDoctor, _contractAddressDoctor);
     _addDoctor = _contractDoctor.function('addDoctor');
-    _existDoctor = _contractDoctor.function('exist');
-    _displayDoctor = _contractDoctor.function('displayDoctor');
+    _existDoctor = _contractDoctor.function('doesDoctorExist');
+    _displayDoctor = _contractDoctor.function('getDoctorDetails');
     //patient contracts
     _contractPatient =
         DeployedContract(_abiCodePatient, _contractAddressPatient);
-    _existPatient = _contractPatient.function('exist');
+    _existPatient = _contractPatient.function('doesPatientExist');
     _addPatient = _contractPatient.function('addPatient');
-    _permission = _contractPatient.function('permission');
-    _deletePermission = _contractPatient.function('deletePermission');
-    _checkPermission = _contractPatient.function('checkPermission');
+    _permission = _contractPatient.function('grantPermission');
+    _deletePermission = _contractPatient.function('revokePermission');
+    _checkPermission = _contractPatient.function('hasPermission');
     _setPrescription = _contractPatient.function('setPrescription');
-    _displayPrescriptions = _contractPatient.function('displayPrescription');
-    _displayPatient = _contractPatient.function('displayPatient');
+    _displayPrescriptions = _contractPatient.function('displayPrescriptions');
+    _displayPatient = _contractPatient.function('getPatientDetails');
   }
 
   Future<void> addDoctor(String firstName, String lastName) async {
